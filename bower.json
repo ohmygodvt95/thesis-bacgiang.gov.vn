@@ -1,0 +1,21 @@
+{
+  "name": "thesis",
+  "description": "",
+  "main": "",
+  "authors": [
+    "ohmygodvt95 <ohmygodvt95@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ohmygodvt95/thesis-bacgiang.gov.vn",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.11",
+    "font-awesome": "^4.7.0"
+  }
+}
