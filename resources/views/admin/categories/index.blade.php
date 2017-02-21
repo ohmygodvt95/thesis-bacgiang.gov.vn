@@ -60,8 +60,8 @@
                                                 <td>
                                                     <a href="/admin/categories/{{ $category->id }}/edit" class="btn btn-primary">Edit</a>
                                                     <form action="/admin/categories/{{ $category->id }}" method="POST"
-                                                          onsubmit="return confirm('Do you really want to delete category?');"
-                                                          style="display: inline-block">
+                                                        onsubmit="return confirm('Do you really want to delete category?');"
+                                                        style="display: inline-block">
                                                         {{ csrf_field() }}
                                                         <input type="hidden" name="_method" value="DELETE">
                                                         <button type="submit" class="btn btn-danger">Delete</button>

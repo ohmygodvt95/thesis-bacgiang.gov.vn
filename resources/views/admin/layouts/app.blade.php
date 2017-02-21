@@ -61,5 +61,6 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <!-- AdminLTE -->
     <script src="{{ asset ("components/AdminLTE/dist/js/app.min.js") }}" type="text/javascript"></script>
+    @yield('javascript')
 </body>
 </html>

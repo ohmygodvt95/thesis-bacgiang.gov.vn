@@ -39,6 +39,13 @@
                     <li><a href="/admin/categories/create">Create category</a></li>
                 </ul>
             </li>
+            <li class="treeview">
+                <a href="/admin/posts"><span>Posts</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/posts">List posts</a></li>
+                    <li><a href="/admin/posts/create">Create post</a></li>
+                </ul>
+            </li>
             <li><a href="#"><span>Another Link</span></a></li>
             <li class="treeview">
                 <a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
