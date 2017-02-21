@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{ $page_title or "Bắc Giang Portal" }}</title>
+    <title>{{ $pageTitle or "Bắc Giang Portal" }}</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -34,7 +34,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    {{ $page_title or "Page Title" }}
+                    {{ $pageTitle or "Page Title" }}
                     <small>{{ $page_description or null }}</small>
                 </h1>
                 <!-- You can dynamically generate breadcrumbs here -->
@@ -45,6 +45,11 @@
             </section>
             <!-- Main content -->
             <section class="content">
+                @if (session('message'))
+                    <div class="alert alert-{{ session('type') }}">
+                        {{ session('message') }}
+                    </div>
+                @endif
                 <!-- Your Page Content Here -->
                 @yield('content')
             </section><!-- /.content -->
