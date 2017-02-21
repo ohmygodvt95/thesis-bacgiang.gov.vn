@@ -19,8 +19,9 @@ class CreateCategoriesTable extends Migration
             $table->string('slug');
             $table->string('link')->default('#');
             $table->unsignedInteger('parent_id')->default(0);
+            $table->boolean('show_on_navigation')->default(false);
+            $table->enum('type', ['null', 'text', 'file', 'link'])->default('link');
             $table->timestamps();
-            $table->enum('type', ['text', 'file', 'link'])->default('link');
         });
     }
 

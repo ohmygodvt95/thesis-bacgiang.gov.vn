@@ -17,4 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/admin', 'Admin\AdminController@index');
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+    Route::get('/', 'Admin\AdminController@index');
+    Route::resource('categories', 'Admin\CategoriesController');
+});
