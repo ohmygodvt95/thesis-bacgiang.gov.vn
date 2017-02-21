@@ -17,7 +17,13 @@ class CreateFilesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('category_id');
             $table->unsignedInteger('user_id');
-            $table->text('body');
+            $table->string('title');
+            $table->text('description');
+            $table->date('publish_date')->nullable();
+            $table->string('code')->nullable();
+            $table->string('organization')->nullable();
+            $table->string('type_document')->nullable();
+            $table->enum('type', ['document', 'file']);
             $table->string('attach');
             $table->integer('view')->default(0);
             $table->timestamps();

@@ -19,7 +19,9 @@ class CreatePostsTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('title');
             $table->string('slug');
-            $table->string('body');
+            $table->string('thumb');
+            $table->text('description');
+            $table->text('body');
             $table->unsignedInteger('views')->default(0);
             $table->timestamps();
 
