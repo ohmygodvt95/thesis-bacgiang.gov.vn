@@ -31,7 +31,7 @@
                                         @if($category->type != 'link')
                                             @if(count($category->subCategories) == 0 && $category->type == 'text')
                                                 <option value="{{ $category->id }}"
-                                                    {{ old('parent_id') == $category->id ? 'selected':'' }}>
+                                                    {{ old('category_id') == $category->id ? 'selected':'' }}>
                                                     {{ $category->title }}
                                                 </option>
                                             @elseif(count($category->subCategories) > 0)

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Validation\Rule;
 use Validator;
 use Slugify;
 class CategoriesController extends Controller
@@ -55,7 +56,10 @@ class CategoriesController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required|max:255',
             'parent_id' => 'required',
-            'type' => 'required',
+            'type' => [
+                'required',
+                Rule::in(['null', 'text', 'file', 'link']),
+            ],
             'show_on_navigation' => 'required|boolean',
         ]);
 
@@ -110,7 +114,10 @@ class CategoriesController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required|max:255',
             'parent_id' => 'required',
-            'type' => 'required',
+            'type' => [
+                'required',
+                Rule::in(['null', 'text', 'file', 'link']),
+            ],
             'show_on_navigation' => 'required|boolean',
         ]);
 
