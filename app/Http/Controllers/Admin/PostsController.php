@@ -17,7 +17,12 @@ class PostsController extends Controller
     {
         $posts = null;
         if($request->input('query')){
-            $posts = Post::where('title', 'like', "%".$request->input('query')."%")->orderBy('id', 'DESC')
+            $posts = Post::where('title', 'like', "%".$request->input('query')."%")
+                ->orWhere('slug', 'like', "%".$request->input('query')."%")
+                ->orWhere('description', 'like', "%".$request->input('query')."%")
+                ->orWhere('body', 'like', "%".$request->input('query')."%")
+                ->orWhere('created_at', 'like', "%".$request->input('query')."%")
+                ->orderBy('id', 'DESC')
                 ->paginate($this->perPage);
             $posts->withPath('/admin/posts?query='.$request->input('query'));
         }

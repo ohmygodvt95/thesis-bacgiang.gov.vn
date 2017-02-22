@@ -18,6 +18,7 @@ class CreateFilesTable extends Migration
             $table->unsignedInteger('category_id');
             $table->unsignedInteger('user_id');
             $table->string('title');
+            $table->string('slug');
             $table->text('description');
             $table->date('publish_date')->nullable();
             $table->string('code')->nullable();
