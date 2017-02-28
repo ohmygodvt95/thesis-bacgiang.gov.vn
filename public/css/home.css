@@ -1,0 +1,199 @@
+#content > div, #slider > div, #more > div{
+    padding: 0 0 0 10px;
+}
+#hotline{
+    padding: 10px;
+}
+#content .image-slider {
+    position: relative;
+}
+
+#content .image-slider div {
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    padding-left: 10px;
+}
+
+.nav-tabs {
+    background-color: #F0F0F0;
+    border-radius: 3px 3px 0 0;
+}
+
+.nav-tabs > li a {
+    padding: 5px;
+    font-weight: bold;
+    color: #2A2A2A;
+    font-size: 13px;
+}
+
+.nav-tabs > li.active a {
+    color: #FF0000;
+}
+
+#content .tab-content ul {
+    padding-left: 15px;
+    font-size: 13px;
+    color: #2A2A2A;
+}
+
+#content .tab-content ul a {
+    color: #2A2A2A;
+}
+
+#content .tab-content ul li {
+    height: 50px;
+    line-height: 20px;
+    padding: 5px 0;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.tab-content ul a:hover {
+    text-decoration: none;
+}
+
+.nav-docs > li a {
+    padding: 5px;
+    font-weight: normal;
+    color: #1796DB;
+    font-size: 13px;
+}
+.nav-docs > li.active{
+    background-color: #E1F2FA;
+}
+
+.nav-docs > li.active a{
+    color: #000000;
+    background-color: #E1F2FA;
+}
+.nav-notice > li a{
+    text-transform: uppercase;
+}
+
+
+/*slider */
+#slider .panel {
+    margin-top: 20px;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    background-color: #F7F7F7;
+}
+#slider .panel h5{
+    width: 100%;
+    padding-left: 0 10px;
+    color: #003b80;
+    font-weight: bold;
+    margin: 0;
+}
+.jcarousel-clip, .jcarousel-container{
+
+    width: 100%!important;
+}
+.jcarousel-clip{
+    height: 150px!important;
+}
+.jcarousel-container{
+    border: none!important;
+    background-color: transparent!important;
+    height: 125px!important;
+}
+
+.jcarousel-item{
+    width: 125px!important;
+    height: 125px!important;
+}
+.jcarousel-item a{
+    color: #2A2A2A;
+    font-size: 12px;
+    height: 150px!important;
+    line-height: 20px!important;
+    overflow: hidden;
+}
+.jcarousel-item a:hover{
+    text-decoration: none;
+}
+#hotline .more{
+    padding: 0;
+    list-style: none;
+}
+
+#hotline .more li{
+    padding: 20px 0;
+    float: left;
+    margin-right: 25px;
+}
+#hotline .more li:last-child{
+    margin-right: 0;
+}
+
+#hotline .more li:last-child img{
+    width: 200px;
+}
+
+#hotline .more li img{
+    height: 45px;
+    width: 170px;
+}
+/*more*/
+#more .heading a{
+    color: #003B80;
+    font-weight: bold;
+}
+#more .tab-content{
+    text-align: justify;
+    font-size: 12px;
+}
+#more .tab-content li{
+    margin-bottom: 5px;
+}
+#more .nav{
+    margin-bottom: 20px;
+}
+#more .read-more{
+    padding-right: 10px;
+    color: #BBBBD5;
+    background-image: url("/images/read_more.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#more .ul-docs{
+    padding-left: 20px;
+    list-style-image: url("/images/list.jpg");
+}
+#more .tab-content{
+    border-bottom: 1px solid #DBC6D5;
+}
+#more .banner{
+    margin-top: 20px;
+}
+
+#more .links{
+    padding-top: 20px;
+}
+#more .links .col-sm-4{
+    padding-top: 5px;
+}
+
+#more .help{
+    margin-top: 20px;
+}
+
+#more .help .col-sm-4{
+    height: 34px;
+    line-height: 34px;
+    padding-left: 30px;
+    margin-top: 6px;
+    font-weight: bolder;
+    background-image: url("/images/bg_help_item.png");
+}
+
+#more .help .col-sm-4 a{
+    color: #000000;
+}

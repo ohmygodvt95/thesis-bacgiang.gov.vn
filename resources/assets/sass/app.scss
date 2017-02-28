@@ -7,3 +7,11 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//custom
+@import "home";
+a:hover{
+  text-decoration: none;
+}
+.no-padding{
+  padding: 0 0 0 15px;
+}

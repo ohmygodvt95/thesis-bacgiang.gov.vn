@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "AdminLTE": "admin-lte#^2.3.11",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jcarousel": "https://github.com/jsor/jcarousel.git#0.2"
   }
 }
