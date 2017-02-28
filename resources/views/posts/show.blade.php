@@ -33,7 +33,7 @@
                     </div>
                     <hr>
                     <div class="fb-share-button pull-left" style="margin-right: 15px; margin-top: -3px;"
-                         data-href="{{ url('/posts/'.$post->id) }}"
+                         data-href="{{ Request::url() }}"
                          data-layout="button_count">
                     </div>
                     <div class="g-plusone pull-left" data-size="medium"></div>
@@ -46,7 +46,7 @@
                     <ul>
                         @foreach($relatedPosts as $item)
                             <li>
-                                <a href="{{ Request::url() }}" title="{{ $item->title }}">
+                                <a href="{{ url('/posts/'.$item->id) }}" title="{{ $item->title }}">
                                     {{ $item->title }}
                                 </a>
                                 <small> ({{ substr($item->created_at, 0, 10) }})</small>
