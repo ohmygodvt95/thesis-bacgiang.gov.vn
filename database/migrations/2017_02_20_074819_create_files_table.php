@@ -26,7 +26,7 @@ class CreateFilesTable extends Migration
             $table->string('type_document')->nullable();
             $table->enum('type', ['document', 'file']);
             $table->string('attach');
-            $table->integer('view')->default(0);
+            $table->integer('views')->default(0);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')

@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <h5>
-                                    <a href="{{ url('/posts/'.$item->id) }}">
+                                    <a href="{{ url('/files/'.$item->id) }}">
                                         {{ $item->title }}
                                     </a>
                                     <br>

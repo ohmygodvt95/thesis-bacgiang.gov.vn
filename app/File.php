@@ -10,4 +10,8 @@ class File extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    function scopeGetCategory($query){
+        return Category::find($this->category_id);
+    }
 }
