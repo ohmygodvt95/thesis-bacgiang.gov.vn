@@ -19,7 +19,6 @@ class FilesController extends Controller
         $files = null;
         if($request->input('query')){
             $files = File::where('title', 'like', "%".$request->input('query')."%")
-                ->orWhere('title', 'like', "%".$request->input('query')."%")
                 ->orWhere('slug', 'like', "%".$request->input('query')."%")
                 ->orWhere('description', 'like', "%".$request->input('query')."%")
                 ->orWhere('code', 'like', "%".$request->input('query')."%")

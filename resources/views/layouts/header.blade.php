@@ -12,7 +12,7 @@
             class="img-responsive">
     </a>
     <ul class="navigation">
-        <li class="pull-left"><a href="#"><i class="fa fa-home fa-2x"></i></a></li>
+        <li class="pull-left"><a href="{{ url('/') }}"><i class="fa fa-home fa-2x"></i></a></li>
         @foreach($menu as $item)
             <li class="pull-left nav-item">
                 <a href="{{ $item->type == 'link' ? $item->link : url('/categories/'.$item->id) }}">

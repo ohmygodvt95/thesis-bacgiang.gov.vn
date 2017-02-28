@@ -26,23 +26,23 @@
         <img src="http://www.bacgiang.gov.vn//upload/services/3218_danhoi.jpg">
     </a>
 </div>
-<a href="/ves-portal/c-2408/Chuong-trinh-cong-tac.html" title="3">
+<a href="{{ url('/categories/47') }}" title="3">
     <img src="http://www.bacgiang.gov.vn//upload/services/7835_link_top3.jpg" alt="3" style="margin-bottom:3px;"
          align="left">
 </a>
-<a href="/diem-bao/" title="7">
+<a href="{{ url('/categories/50') }}" title="7">
     <img src="http://www.bacgiang.gov.vn//upload/services/25270_Diem bao.jpg" alt="7"
          style="margin-bottom:3px;" align="left">
 </a>
-<a href="/ves-portal/c-2477/Van-ban-moi.html" title="Văn bản mới - chính sách mới">
+<a href="{{ url('/categories/25') }}" title="Văn bản mới - chính sách mới">
     <img src="http://www.bacgiang.gov.vn//upload/services/30476_VBM---CSM.jpg" alt="Văn bản mới - chính sách mới"
          style="margin-bottom:3px;" align="left">
 </a>
-<a href="http://www.bacgiang.gov.vn/ves-portal/29236/DUONG-DAY-NONG.html" title="C Đường dây nóng">
+<a href="{{ url('/categories/51') }}" title="C Đường dây nóng">
     <img src="http://www.bacgiang.gov.vn//upload/services/13117_Duong dan nong chung.jpg" alt="C Đường dây nóng"
          style="margin-bottom:3px;" align="left">
 </a>
-<a href="http://www.bacgiang.gov.vn/email/" title="Danh ba dien tu">
+<a href="{{ url('/categories/52') }}" title="Danh ba dien tu">
     <img src="http://www.bacgiang.gov.vn//upload/services/3804_Danh-ba.jpg" alt="Danh ba dien tu"
          style="margin-bottom:3px;" align="left">
 </a>

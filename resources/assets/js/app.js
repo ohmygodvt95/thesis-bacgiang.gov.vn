@@ -6,3 +6,7 @@
  */
 
 require('./bootstrap');
+
+$('.nav-item').mouseenter(function () {
+    $('.sub-navigation').html($('.hidden', this).html());
+});

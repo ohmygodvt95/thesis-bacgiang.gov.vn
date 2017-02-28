@@ -448,9 +448,4 @@
             }, 3000);
         });
     </script>
-    <script>
-        $('.nav-item').mouseenter(function () {
-            $('.sub-navigation').html($('.hidden', this).html());
-        });
-    </script>
 @endsection

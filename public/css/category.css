@@ -1,0 +1,17 @@
+#category .category-title{
+    background-color: #C9EBFA;
+    padding: 5px 20px;
+    border-left: 2px solid #2A618F;
+    text-transform: uppercase;
+    color: #2A618F;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+h5{
+    font-weight: bold;
+}
+.thumb{
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
