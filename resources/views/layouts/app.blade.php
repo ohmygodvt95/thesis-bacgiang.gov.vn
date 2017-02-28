@@ -8,6 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }} - {{ $pageTitle or "Home" }}</title>
+    <meta property="og:url"           content="{{ Request::url() }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{ config('app.name', 'Laravel') }} - {{ $pageTitle or "Home" }}" />
+    <meta property="og:description"   content="{{ config('app.name', 'Laravel') }} - {{ $pageTitle or "Home" }}" />
+    <meta property="og:image"         content="{{ asset('images/header.jpg') }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png') }}"/>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('components/font-awesome/css/font-awesome.min.css') }}">
@@ -18,8 +24,18 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=1231289680289804";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container" id="wrapper">
         @include('layouts.header')
         <div class="time">
