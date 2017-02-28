@@ -15,4 +15,8 @@ class Post extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    function scopeGetCategory($query){
+        return Category::find($this->category_id);
+    }
 }
