@@ -25,6 +25,10 @@ class Category extends Model
         return Category::where('parent_id', $this->id)->get();
     }
 
+    function scopeGetFatherCategory($query){
+        return Category::find($this->parent_id);
+    }
+
     function scopeGetFiles($query, $limit = 5, $offset = 0){
         if($this->type == 'file'){
             return self::files()->orderBy('id', 'desc')
