@@ -11,6 +11,9 @@
                 <a href="{{ url('/users') }}">Tài khoản</a>
             @endif
         </li>
+        @if(Auth::check())
+            <li class="pull-right"><a href="{{ url('/users') }}">Tài khoản</a></li>
+        @endif
         <li class="pull-right"><a href="/sitemap">Sơ đồ web</a></li>
         <li class="pull-right"><a href="/contact">Liên hệ</a></li>
         <li class="pull-right"><a href="#">Bookmark this site</a></li>

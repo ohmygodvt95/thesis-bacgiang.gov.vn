@@ -16,7 +16,6 @@
                     <!-- TAB NAVIGATION -->
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="active"><a href="#tab1" role="tab" data-toggle="tab">Thông tin</a></li>
-                        <li><a href="#tab2" role="tab" data-toggle="tab">Các yêu cầu của tôi</a></li>
                     </ul>
                     <!-- TAB CONTENT -->
                     <div class="tab-content">
@@ -44,10 +43,6 @@
                                     </tr>
                             	</tbody>
                             </table>
-                        </div>
-                        <div class="tab-pane fade" id="tab2">
-                            <h2>Tab2</h2>
-                            <p>Lorem ipsum.</p>
                         </div>
                     </div>
 

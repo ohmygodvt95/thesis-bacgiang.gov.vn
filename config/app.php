@@ -13,6 +13,7 @@ return [
     */
 
     'name' => 'Bắc Giang Portal',
+    'email' => env('APP_CONTACT_MAIL', 'ohmygodvt95@gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
