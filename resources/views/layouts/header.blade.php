@@ -44,9 +44,9 @@
             </li>
         @endforeach
         <li class="pull-right">
-            <form action="/search" method="GET">
+            <form action="{{ url('/search') }}" method="GET">
                 <div class="input-group">
-                    <input type="text" title="search" placeholder="Type something..">
+                    <input type="text" title="search" name="query" placeholder="Type something..">
                     <span class="input-group-btn">
                     <button class="" type="submit"></button>
                 </span>

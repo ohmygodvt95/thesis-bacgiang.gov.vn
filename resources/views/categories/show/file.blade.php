@@ -23,16 +23,18 @@
                     <h3 class="panel-title">Tìm kiếm văn bản</h3>
                 </div>
                 <div class="panel-body">
-                    <form action="{{ url('/categories/'.$category->id) }}" method="GET">
-                        <div class="input-group">
-                            <input type="text" name="query" class="form-control"
-                                placeholder="Số hiệu, nội dung, ngày ra mắt v.v..">
-                            <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="submit">Tìm kiếm</button>
+                    <div class="well well-sm">
+                        <form action="{{ url('/categories/'.$category->id) }}" method="GET">
+                            <div class="input-group">
+                                <input type="text" name="query" class="form-control"
+                                    placeholder="Số hiệu, nội dung, ngày ra mắt v.v.."
+                                    value="{{ Request::input('query') }}">
+                                <span class="input-group-btn">
+                                <button class="btn btn-secondary btn-primary" type="submit">Tìm kiếm</button>
                             </span>
-                        </div>
-                    </form>
-                    <br>
+                            </div>
+                        </form>
+                    </div>
                     <a href="{{ url('/categories/'.$category->id) }}" class="">Hủy bộ tìm kiếm</a>
                 </div>
             </div>
