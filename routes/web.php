@@ -20,6 +20,7 @@ Route::resource('categories', 'CategoriesController');
 Route::resource('posts', 'PostsController');
 
 Route::resource('files', 'FilesController');
+Route::resource('search', 'SearchController');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/', 'Admin\AdminController@index');

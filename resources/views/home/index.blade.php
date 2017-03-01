@@ -38,7 +38,7 @@
                     <ul>
                         @foreach($newsInCountry->getPosts(5) as $item)
                             <li>
-                                <a href="/posts/{{ $item->id }}" title="{{ $item->title }}">
+                                <a href="{{ url('/posts/'.$item->id) }}" title="{{ $item->title }}">
                                     {{ $item->title }}
                                 </a>
                             </li>
@@ -49,7 +49,7 @@
                     <ul>
                         @foreach($newsInInternational->getPosts(5) as $item)
                             <li>
-                                <a href="/posts/{{ $item->id }}" title="{{ $item->title }}">
+                                <a href="{{ url('/posts/'.$item->id) }}" title="{{ $item->title }}">
                                     {{ $item->title }}
                                 </a>
                             </li>
