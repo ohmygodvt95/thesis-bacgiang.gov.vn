@@ -16,13 +16,15 @@ Route::get('/', 'HomeController@index');
 Auth::routes();
 
 Route::resource('categories', 'CategoriesController');
-
 Route::resource('posts', 'PostsController');
-
 Route::resource('files', 'FilesController');
 Route::resource('search', 'SearchController');
+Route::resource('users', 'UsersController');
+Route::resource('contact', 'ContactController');
+Route::resource('sitemap', 'SitemapController');
+Route::resource('print', 'PrintController');
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/', 'Admin\AdminController@index');
     Route::resource('categories', 'Admin\CategoriesController');
     Route::resource('posts', 'Admin\PostsController');

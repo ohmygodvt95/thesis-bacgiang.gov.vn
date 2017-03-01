@@ -37,7 +37,7 @@
                          data-layout="button_count">
                     </div>
                     <div class="g-plusone pull-left" data-size="medium"></div>
-                    <a href="{{ url('/print/'.$post->id) }}" class="pull-right btn btn-sm btn-primary">In ấn</a>
+                    <a target="_new" href="{{ url('/print/'.$post->id) }}" class="pull-right btn btn-sm btn-primary">In ấn</a>
                 </div>
                 <div class="panel-footer">
                     <hr>

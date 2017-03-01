@@ -1,7 +1,19 @@
 <header>
     <ul class="top-menu">
-        <li class="pull-right"><a href="#">English</a></li>
         <li class="pull-right"><a href="#">Tiếng Việt</a></li>
+        <li class="pull-right">
+            @if(Auth::check())
+                <form action="{{ url('/logout') }}" method="POST" id="logout">
+                    {{ csrf_field() }}
+                    <a href="#" onclick="$('#logout').submit();">Đăng xuất</a>
+                </form>
+            @else
+                <a href="{{ url('/users') }}">Tài khoản</a>
+            @endif
+        </li>
+        @if(Auth::check())
+            <li class="pull-right"><a href="{{ url('/users') }}">Tài khoản</a></li>
+        @endif
         <li class="pull-right"><a href="/sitemap">Sơ đồ web</a></li>
         <li class="pull-right"><a href="/contact">Liên hệ</a></li>
         <li class="pull-right"><a href="#">Bookmark this site</a></li>
