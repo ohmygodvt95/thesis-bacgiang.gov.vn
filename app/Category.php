@@ -75,16 +75,7 @@ class Category extends Model
         else if($this->type == 'null' && count(self::subCategories()) > 0){
             $list = self::subCategories()->get(['id'])->toArray();
             return Post::whereIn('category_id', $list)->orderBy('id', 'DESC')
-                ->offset($offset)->limit($limit)->get(
-                [
-                    'id',
-                    'title',
-                    'slug',
-                    'created_at',
-                    'description',
-                    'thumb'
-                ]
-            );
+                ->offset($offset)->limit($limit)->get();
         }
         else{
             return null;

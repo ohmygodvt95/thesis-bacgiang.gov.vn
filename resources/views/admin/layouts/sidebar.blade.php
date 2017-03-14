@@ -53,7 +53,7 @@
                     <li><a href="/admin/files/create">Create files</a></li>
                 </ul>
             </li>
-            {{--<li><a href="#"><span>Another Link</span></a></li>--}}
+            <li><a href="/admin/services"><span>Services</span></a></li>
             {{--<li class="treeview">--}}
                 {{--<a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>--}}
                 {{--<ul class="treeview-menu">--}}

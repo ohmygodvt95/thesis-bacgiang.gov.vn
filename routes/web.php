@@ -23,10 +23,19 @@ Route::resource('users', 'UsersController');
 Route::resource('contact', 'ContactController');
 Route::resource('sitemap', 'SitemapController');
 Route::resource('print', 'PrintController');
+Route::group(['prefix' => 'service'], function () {
+    Route::get('/', 'ServiceController@index');
+    Route::post('/check', 'ServiceController@check');
+    Route::resource('me', 'UserServiceController');
+    Route::resource('document', 'ServiceDocumentController');
+});
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/', 'Admin\AdminController@index');
+
     Route::resource('categories', 'Admin\CategoriesController');
     Route::resource('posts', 'Admin\PostsController');
     Route::resource('files', 'Admin\FilesController');
+    Route::resource('services', 'Admin\ServicesController');
+
 });
