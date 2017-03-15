@@ -343,22 +343,22 @@
                             <h5 class="panel-title">VĂN BẢN VÀ HỒ SƠ ĐIỆN TỬ</h5>
                         </div>
                         <div class="panel-body">
-                            <h6 class="text-center">Đến tháng 2/2017 Tỉnh Bắc Giang đã trao đổi</h6>
-                            <h2 class="text-center text-danger">343,630</h2>
+                            <h6 class="text-center">{{ date("Y-m-d")  }} Tỉnh Bắc Giang đã trao đổi</h6>
+                            <h2 class="text-center text-danger">{{ $receive  }}</h2>
                             <div class="text-center">
                                 <small>văn bản qua mạng giữa 31 đơn vị</small>
                                 <br>
-                                <small><i>(Tự động cập nhật lúc 00:00 ngày 28/2/2017) </i></small>
+                                <small><i>(Tự động cập nhật lúc 00:00 ngày {{ date("Y-m-d")  }}) </i></small>
                             </div>
                             <hr>
                             <h6 class="text-center">Đến tháng 02/2017 Tỉnh Bắc Giang</h6>
-                            <h2 class="text-center text-danger">96%</h2>
+                            <h2 class="text-center text-danger">{{ round($success / $receive) * 100 }} %</h2>
                             <div class="text-center">
                                 <small>hồ sơ đúng hạn <br>
-                                    Đã tiếp nhận: 34337 <br>
-                                    Đã giải quyết: 27068 </small>
+                                    Đã tiếp nhận: {{ $receive }} <br>
+                                    Đã giải quyết: {{ $success }} </small>
                                 <br>
-                                <small><i>(Tự động cập nhật lúc 00:00 ngày 28/2/2017) </i></small>
+                                <small><i>(Tự động cập nhật lúc 00:00 ngày {{ date("Y-m-d")  }}) </i></small>
                             </div>
                         </div>
                     </div>

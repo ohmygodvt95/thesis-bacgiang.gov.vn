@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -32,7 +33,9 @@ class HomeController extends Controller
             'infoManagementFiles' => $infoManagementFiles,
             'help' => $help,
             'talent' => $talent,
-            'docs' => $docs
+            'docs' => $docs,
+            'receive' => Service::all()->count(),
+            'success' => Service::where('status', 2)->count()
         ]);
     }
 }

@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/post.css') }}">
+    <style>
+        .fb-comments > span{
+            width: 100%!important;
+        }
+    </style>
 @endsection
 @section('content')
     <ol class="breadcrumb">
@@ -53,6 +58,10 @@
                             </li>
                         @endforeach
                     </ul>
+                    <hr>
+                    <h4 class="">Bình luận:</h4>
+                    <hr>
+                    <div class="fb-comments" data-width="100%" data-href="{{ url('/posts/'.$post->id) }}" data-numposts="5"></div>
                 </div>
             </div>
         </div>
