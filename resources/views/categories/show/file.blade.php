@@ -30,8 +30,8 @@
                                     placeholder="Số hiệu, nội dung, ngày ra mắt v.v.."
                                     value="{{ Request::input('query') }}">
                                 <span class="input-group-btn">
-                                <button class="btn btn-secondary btn-primary" type="submit">Tìm kiếm</button>
-                            </span>
+                                    <button class="btn btn-secondary btn-primary" type="submit">Tìm kiếm</button>
+                                </span>
                             </div>
                         </form>
                     </div>
