@@ -16,7 +16,7 @@
         @endif
         <li class="pull-right"><a href="/sitemap">Sơ đồ web</a></li>
         <li class="pull-right"><a href="/contact">Liên hệ</a></li>
-        <li class="pull-right"><a href="#">Bookmark this site</a></li>
+        <li class="pull-right"><a href="/rss">RSS</a></li>
     </ul>
     <a href="/" class="logo">
         <img src="{{ asset('images/header.jpg') }}"
