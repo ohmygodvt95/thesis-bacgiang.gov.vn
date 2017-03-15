@@ -80,7 +80,7 @@
                                         <div class="modal-content">
                                             <div class="modal-body">
                                                 <iframe width="100%" height="450px" frameborder="0"
-                                                        src="{{ url('/') }}/filemanager/dialog.php?type=1&amp;field_id=thumb&amp;relative_url=1"></iframe>
+                                                        src="{{ url('/') }}/filemanager/dialog.php?type=1&field_id=thumb&relative_url=1"></iframe>
                                             </div>
                                         </div>
                                     </div>

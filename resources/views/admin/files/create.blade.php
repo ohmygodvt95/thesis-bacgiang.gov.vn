@@ -122,7 +122,7 @@
                                         <div class="modal-content">
                                             <div class="modal-body">
                                                 <iframe width="100%" height="500px" frameborder="0"
-                                                        src="{{ url('/') }}/filemanager/dialog.php?type=2&amp;field_id=thumb&amp;relative_url=1"></iframe>
+                                                        src="{{ url('/') }}/filemanager/dialog.php?type=2&field_id=thumb&relative_url=1"></iframe>
                                             </div>
                                         </div>
                                     </div>
