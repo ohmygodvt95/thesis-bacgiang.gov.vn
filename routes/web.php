@@ -24,6 +24,8 @@ Route::resource('users', 'UsersController');
 Route::resource('contact', 'ContactController');
 Route::resource('sitemap', 'SitemapController');
 Route::resource('print', 'PrintController');
+Route::resource('rss', 'RssController');
+
 Route::group(['prefix' => 'service'], function () {
     Route::get('/', 'ServiceController@index');
     Route::post('/check', 'ServiceController@check');
