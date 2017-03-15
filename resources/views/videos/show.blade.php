@@ -37,6 +37,10 @@
                         </div>
                     </div>
                 @endforeach
+                <hr>
+                <h4 class="">Bình luận:</h4>
+                <hr>
+                <div class="fb-comments" data-width="100%" data-href="{{ url('/videos/'.$video->id) }}" data-numposts="5"></div>
             </div>
         </div>
     </div>
