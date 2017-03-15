@@ -14,14 +14,14 @@
     </a>
 </div>
 <div class="" style="margin-bottom:3px;">
-    <a href="http://www.bacgiang.gov.vn/video/" title="video">
+    <a href="{{ url('/videos') }}" title="video">
         <img src="http://www.bacgiang.gov.vn//upload/services/12834_video32.jpg">
     </a>
-    <a href="http://www.bacgiang.gov.vn/video/c-2501/Ca-khuc-Bac-Giang.html" title="video">
+    <a href="http://localhost:8000/videos/categories/59" title="video">
         <img src="http://www.bacgiang.gov.vn//upload/services/7658_Giai dieu BG.jpg"
         >
     </a>
-    <a href="http://www.bacgiang.gov.vn/video/c-2500/Dan-hoi-giam-doc-tra-loi.html"
+    <a href="http://localhost:8000/videos/categories/56"
        title="thoisu">
         <img src="http://www.bacgiang.gov.vn//upload/services/3218_danhoi.jpg">
     </a>
@@ -46,7 +46,7 @@
     <img src="http://www.bacgiang.gov.vn//upload/services/3804_Danh-ba.jpg" alt="Danh ba dien tu"
          style="margin-bottom:3px;" align="left">
 </a>
-<a href="http://www.bacgiang.gov.vn/ves-portal/35907/Bac-Giang:-10-thanh-tuu-noi-bat-nam-2016.html"
+<a href="http://localhost:8000/videos/categories/58"
    title="Tra loi duong day nong">
     <img src="http://www.bacgiang.gov.vn//upload/services/1176_10 thanh tuu.jpg"
          alt="Tra loi duong day nong" style="margin-bottom:3px;" align="left">

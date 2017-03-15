@@ -14,7 +14,8 @@
 Route::get('/', 'HomeController@index');
 
 Auth::routes();
-
+Route::resource('videos', 'VideosController');
+Route::get('videos/categories/{id}', 'VideosController@categories');
 Route::resource('categories', 'CategoriesController');
 Route::resource('posts', 'PostsController');
 Route::resource('files', 'FilesController');
@@ -32,7 +33,7 @@ Route::group(['prefix' => 'service'], function () {
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/', 'Admin\AdminController@index');
-
+    Route::resource('videos', 'Admin\VideosController');
     Route::resource('categories', 'Admin\CategoriesController');
     Route::resource('posts', 'Admin\PostsController');
     Route::resource('files', 'Admin\FilesController');

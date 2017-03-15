@@ -16,6 +16,11 @@ class Category extends Model
         return $this->hasMany(Post::class,'category_id', 'id');
     }
 
+    function videos()
+    {
+        return $this->hasMany(Video::class,'category_id', 'id');
+    }
+
     function files()
     {
         return $this->hasMany(File::class,'category_id', 'id');
@@ -75,6 +80,21 @@ class Category extends Model
         else if($this->type == 'null' && count(self::subCategories()) > 0){
             $list = self::subCategories()->get(['id'])->toArray();
             return Post::whereIn('category_id', $list)->orderBy('id', 'DESC')
+                ->offset($offset)->limit($limit)->get();
+        }
+        else{
+            return null;
+        }
+    }
+
+    function scopeGetVideos($query, $limit = 5, $offset = 0){
+        if($this->type == 'text'){
+            return self::videos()->orderBy('id', 'desc')
+                ->offset($offset)->limit($limit)->get();
+        }
+        else if($this->type == 'null' && count(self::subCategories()) > 0){
+            $list = self::subCategories()->get(['id'])->toArray();
+            return Video::whereIn('category_id', $list)->orderBy('id', 'DESC')
                 ->offset($offset)->limit($limit)->get();
         }
         else{
